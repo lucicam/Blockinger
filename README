@@ -1,3 +1,11 @@
+Notes:
+-------
+Blockinger fork, updated for use with Android Studio and for a more recent target sdk. (I was annoyed I couldn't install it on Android 14 so this is the result of that)
+I only put the original code in the new build system. I have not modified anything aside from that so this is the original game.
+
+=========================================================
+Original README:
+-------
 Thank you for using Blockinger.
 
 Music by Pornophonique.

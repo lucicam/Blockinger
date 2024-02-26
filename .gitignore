@@ -1,2 +1,4 @@
 /bin
 /LICENSE.md
+.gradle
+.idea
