@@ -16,6 +16,15 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("config") {
+            storeFile = file("debug-untrusted.keystore")
+            keyAlias = "blockinger"
+            storePassword = "blockinger"
+            keyPassword = "blockinger"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -23,6 +32,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+
+        debug {
+            signingConfig = signingConfigs["config"]
         }
     }
     compileOptions {
