@@ -58,7 +58,7 @@ jobs:
         run: ./gradlew assemble
 
       - name: Rename apk
-        run: mv app/build/outputs/apk/release/app-release-unsigned.apk app/build/outputs/apk/release/Blockinger.apk
+        run: mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/Blockinger.apk
 
       - name: Get release file apk path
         id: releaseApk
